@@ -1,0 +1,34 @@
+a {
+  color: #0B6E99;
+  background: #DDEBF1;
+}
+
+summary {
+  color: #0B6E99;
+  cursor: pointer;
+}
+
+nav > div > a {
+  color: #5ebaf3;
+  background: black;
+}
+
+body {
+}
+
+nav {
+  background: black;
+  color: white;
+}
+
+pre {
+  background: #efefef;
+}
+
+code {
+  background: #efefef;
+}
+
+pre > code {
+  background: transparent;
+}

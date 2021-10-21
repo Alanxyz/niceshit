@@ -1,0 +1,26 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>NiceShit!</title>
+<description>Blog de ciencia, humanidades y tecnologia.</description>
+<language>en-us</language>
+<link>https://niceshit.ml/</link>
+<atom:link href="https://niceshit.ml/feed.xml" rel="self" type="application/rss+xml"/>
+<image>
+<title>Luke Smith</title>
+<url>https://lukesmith.xyz/pix/portrait.jpg</url>
+<link>https://lukesmith.xyz/rss.xml</link>
+</image>
+
+<item>
+<title>Obscenities are symptoms of weak minds.</title>
+<guid>https://lukesmith.xyz/c/obscenities-are-symptoms-of-weak-minds.html</guid>
+<link>https://lukesmith.xyz/c/obscenities-are-symptoms-of-weak-minds.html</link>
+<description>
+  <![CDATA[
+
+  ]]>
+</description>
+</item>
+
+</channel>
+</rss>

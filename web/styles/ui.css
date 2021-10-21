@@ -1,0 +1,11 @@
+.note, nav > div {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 24px;
+}
+
+nav > div > h1 > img {
+  max-height: 1em;
+  margin-right: 0.3em;
+}

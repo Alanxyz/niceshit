@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Así funciona esta web</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/ui.css" />
+  <link rel="stylesheet" href="styles/theme.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<div class="nav-content">
+<h1><img src="assets/images/soycry.webp" alt />NiceShit!</h1>
+<a href="index.html">🏠 Inicio</a> |
+<a href="donaciones.html">💵 Donaciones</a> |
+<a href="feed.xml">🟧 RSS</a>
+</div>
+</nav>
+<div class="note">
+<h1 id="así-funciona-esta-web">Así funciona esta web</h1>
+<p><img src="assets/images/pepe-hacker.webp" /></p>
+<p>La funcionalidad de un blog no es mas que desplegar documentos de texto y distribuirlos mediante RSS o una subscripción por correo electrónico. Tareas simples que, por lo tanto, deberían realizarse de forma simple.</p>
+<p>He visto muchas webs con menos necesidades usando tecnologías monstruosamente grandes innecesariamente. La mayoría de esas tecnologías son algo como <em>“Mírame. Soluciono este problema que no sabias que tenias y estas empresas me usan. Úsame en tu proyecto”</em>. Existen cosas útiles como <a href="https://reactjs.org/">React</a>, si tienes una plataforma compleja o esperas que se vuelva compleja. Cuando no es el caso, parece que hay quienes solo usan las cosas grandes para mostrarnos que saben usarlas.</p>
+<h2 id="características-y-estructura">Características y estructura</h2>
+<p>Las cosas que resumen las capacidades de esta web son:</p>
+<ul>
+<li>Generación de paginas estáticas</li>
+<li>Solo HTML, CSS y JavaScript</li>
+<li>Soporte de para Markdown</li>
+<li>Feed mediante RSS</li>
+<li>Optimización de imágenes</li>
+<li>Flexibilidad, minimalismo e independencia</li>
+</ul>
+<p>Para cumplir con esta lista solo recurrí a un script y una estructura de archivos coherente. Me tomo menos de una hora codificar la primer versión de esta web y no ha tenido cambios significativos desde entonces. Puedes encontrar el código actualizado <a href="https://github.com/AstralCam/niceshit">aquí</a>.</p>
+<p>La estructura de directorios es la siguiente</p>
+<pre><code>niceshit
+├── Makefile
+├── posts
+├── images
+├── templates
+└── web
+    ├── assets
+    ├── scripts
+    └── styles</code></pre>
+<p>En la carpeta <code>posts</code> se guardan <em>todas</em> las paginas de esta web escritas en formato Markdown. La idea de esto es poder usar cualquier editor sin preocuparme por la compatibilidad del formato. Las paginas se exportan a código HTML mediante <a href="https://pandoc.org/">Pandoc</a> usando alguna de las <a href="https://pandoc.org/MANUAL.html#templates">plantillas</a> que se encuentran en <code>templates</code>. Las imágenes que puedan tener estos documentos se guardan en <code>images</code> y se optimizan para la web mediante <a href="https://developers.google.com/speed/webp/">img2webp</a>. Todo termina dentro de <code>web</code> listo para publicarse. Ademas, hay carpetas para colocar hojas de estilos y scripts para mejorar la apariencia e interactividad de la web.</p>
+<h3 id="script-principal">Script principal</h3>
+<p>El archivo <code>Makefile</code> es el corazón de la web. Es quien se encarga de automatizar las tareas mencionadas. Es un script del programa <a href="https://www.gnu.org/software/make/">Make</a> que se encarga de procesar los documentos y generar las paginas de la web a partir de ellos. Detecta cambios en los archivos fuente y genera las paginas faltantes evitando generar toda la web de nuevo, lo que lo hace muy practico.</p>
+<details>
+<p><summary>Ver archivo Makefile</summary></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">URL</span> ?= https://niceshit.ml/</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a><span class="ex">MD_NOTES</span> := <span class="va">$(</span><span class="ex">shell</span> ls -b posts/*.md<span class="va">)</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a><span class="ex">HTML_NOTES</span> := <span class="va">$(</span><span class="ex">shell</span> ls -b posts/*.md <span class="kw">\</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>                            <span class="kw">|</span> <span class="fu">sed</span> -e <span class="st">&#39;s,posts/,web/,g&#39;</span> -e <span class="st">&#39;s/.md/.html/g&#39;</span><span class="va">)</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a><span class="ex">PNG_IMAGES</span> := <span class="va">$(</span><span class="ex">shell</span> ls -b images/*.png<span class="va">)</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a><span class="ex">GIF_IMAGES</span> := <span class="va">$(</span><span class="ex">shell</span> ls -b images/*.gif<span class="va">)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a><span class="ex">WEBP_IMAGES</span> := <span class="va">$(</span><span class="ex">shell</span> ls -b images/* <span class="kw">\</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a>                             <span class="kw">|</span> <span class="fu">sed</span> -e <span class="st">&#39;s,^,web/assets/,g&#39;</span> -e <span class="st">&#39;s,.png,.webp,g&#39;</span> -e <span class="st">&#39;s,.gif,.webp,g&#39;</span><span class="va">)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a><span class="ex">all</span>: <span class="va">$(</span><span class="ex">HTML_NOTES</span><span class="va">)</span> <span class="va">$(</span><span class="ex">WEBP_IMAGES</span><span class="va">)</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true"></a><span class="ex">web</span>/%.html: <span class="ex">posts/%.md</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true"></a>    <span class="ex">@echo</span> procesando <span class="st">&quot;$&lt;&quot;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true"></a>        <span class="ex">@pandoc</span> -s <span class="kw">\</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a>            <span class="ex">--metadata</span> title=<span class="st">&quot;</span><span class="va">$$</span><span class="st">(grep &#39;^# &#39; $&lt; | sed -e &#39;s,# ,,g&#39;)&quot;</span> <span class="kw">\</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true"></a>            <span class="ex">--template</span> templates/post.html <span class="kw">\</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true"></a>            <span class="ex">--css</span> styles/main.css <span class="kw">\</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true"></a>            <span class="ex">--css</span> styles/ui.css <span class="kw">\</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true"></a>            <span class="ex">--css</span> styles/theme.css <span class="kw">\</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true"></a>        <span class="st">&quot;$&lt;&quot;</span> <span class="ex">-o</span> <span class="st">&quot;</span><span class="va">$@</span><span class="st">&quot;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true"></a><span class="ex">web/assets/images</span>/%.webp: <span class="ex">images/%.png</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true"></a>    <span class="ex">@img2webp</span> <span class="st">&quot;$&lt;&quot;</span> -o <span class="st">&quot;</span><span class="va">$@</span><span class="st">&quot;</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true"></a></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true"></a><span class="ex">web/assets/images</span>/%.webp: <span class="ex">images/%.gif</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true"></a>    <span class="ex">@gif2webp</span> <span class="st">&quot;$&lt;&quot;</span> -o <span class="st">&quot;</span><span class="va">$@</span><span class="st">&quot;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true"></a></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true"></a><span class="ex">feed</span>:</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true"></a>    <span class="ex">@printf</span> <span class="st">&#39;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;rss version=&quot;2.0&quot;&gt;\n&lt;channel&gt;\n&lt;title&gt;NiceShit!&lt;/title&gt;\n&lt;link&gt;https://niceshit.ml/&lt;/link&gt;\n&lt;description&gt;Blog sobre ciencia, humanidades y tecnología.&lt;/description&gt;\n&#39;</span> <span class="op">&gt;</span> web/feed.xml</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true"></a>    <span class="ex">@for</span> i in <span class="va">$(</span><span class="ex">MD_NOTES</span><span class="va">)</span><span class="kw">;</span> <span class="kw">do</span> <span class="kw">\</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true"></a>        <span class="kw">if</span><span class="bu"> [</span> <span class="va">$$</span>i <span class="ot">!=</span> <span class="st">&#39;posts/index.md&#39;</span><span class="bu"> ]</span> <span class="kw">&amp;&amp;</span><span class="bu"> [</span> <span class="va">$$</span>i <span class="ot">!=</span> <span class="st">&#39;posts/donaciones.md&#39;</span><span class="bu"> ]</span> <span class="kw">&amp;&amp;</span><span class="bu"> [</span> <span class="va">$$</span>i <span class="ot">!=</span> <span class="st">&#39;posts/404.md&#39;</span><span class="bu"> ]</span>; <span class="kw">then</span> <span class="kw">\</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true"></a>            <span class="bu">printf</span> <span class="st">&#39;&lt;item&gt;\n&lt;title&gt;%s&lt;/title&gt;\n&lt;link&gt;%s&lt;/link&gt;\n&lt;guid&gt;%s&lt;/guid&gt;\n&lt;description&gt;&lt;![CDATA[ %s ]]&gt;&lt;/description&gt;\n&lt;/item&gt;\n&#39;</span> <span class="kw">\</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true"></a>                <span class="st">&quot;</span><span class="va">$$</span><span class="st">(grep &#39;^# &#39; </span><span class="va">$$</span><span class="st">i | sed -e &#39;s,# ,,g&#39;)&quot;</span> <span class="kw">\</span></span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true"></a>                <span class="st">&quot;</span><span class="va">$$</span><span class="st">(echo &quot;</span><span class="va">$(</span><span class="ex">URL</span><span class="va">)$$</span><span class="ex">i</span><span class="st">&quot; | sed -e &#39;s,posts/,,g&#39; -e &#39;s,.md,.html,g&#39;)&quot;</span> <span class="kw">\</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true"></a>                <span class="st">&quot;</span><span class="va">$$</span><span class="st">(echo &quot;</span><span class="va">$(</span><span class="ex">URL</span><span class="va">)$$</span><span class="ex">i</span><span class="st">&quot; | sed -e &#39;s,posts/,,g&#39; -e &#39;s,.md,.html,g&#39;)&quot;</span> <span class="kw">\</span></span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true"></a>                <span class="st">&quot;</span><span class="va">$$</span><span class="st">(pandoc </span><span class="va">$$</span><span class="st">i)&quot;</span> <span class="kw">\</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true"></a>        ; <span class="kw">fi</span> <span class="kw">\</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true"></a>    ;<span class="kw">done</span> <span class="op">&gt;&gt;</span> <span class="ex">web/feed.xml</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true"></a>    <span class="ex">@printf</span> <span class="st">&#39;&lt;/channel&gt;\n&lt;/rss&gt;&#39;</span> <span class="op">&gt;&gt;</span> web/feed.xml</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true"></a>    </span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true"></a><span class="ex">clean</span>:</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true"></a>    <span class="ex">@rm</span> web/*.html</span></code></pre></div>
+</details>
+<p>Este Makefile permite manejar la web mediante comandos de consola. Estos son los disponibles.</p>
+<ul>
+<li><code>make</code>: Genera las paginas nuevas paginas en HTML, actualiza las que han sido editadas y procesa las imágenes que aun no se han optimizado.</li>
+<li><code>make feed</code>: Crea el feed RSS de todas las paginas sobreescribiendo el actual si este existe.</li>
+<li><code>make clean</code>: Elimina todos los archivos HTML contenidos en la capeta <code>web</code>.</li>
+</ul>
+<h2 id="conclusión">Conclusión</h2>
+<p>Al final, todo esto es la manera en que he solucionado mi necesidad de un blog. Este pequeño sistema satisface mis necesidades y es suficiente para los pocos planes a futuro del blog. La intención principal es incentivar a crear webs propias sin acudir a software innecesario. Si alguien necesita algo que ya este hecho, recomiendo usar <a href="https://writefreely.org/">WriteFreely</a> o <a href="https://pedantic.software/git/blogit">Blogit</a> para usuarios que quieran algo mas mínimalista.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@font-face {
+	font-family: 'Iosevka';
+	font-display: swap;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	src: url('../assets/fonts/iosevka-aile-regular.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  font-family: 'Iosevka';
+  font-size: 17px;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+.note > p > img {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+p {
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1:after {
+	content: " ";
+	display: block;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.9em;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  padding: 8px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+pre {
+  padding: 15px;
+  border-radius: 15px;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+code {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 6px;
+}
+
+pre > code {
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0;
+}
+
+a {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 6px;
+}
