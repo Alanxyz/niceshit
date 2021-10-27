@@ -1,34 +1,66 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-bg: white;
+    --main-fg: #111;
+    --link-fg: #AD1A72;
+    --link-bg: #F4DFEB;
+    --scnd-bg: #efefef;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg: #111;
+    --main-fg: #eee;
+    --link-fg: #e92e9e;
+    --link-bg: #2e1724;
+    --scnd-bg: #222;
+  }
+
+img {
+    opacity: .75;
+    transition: opacity .5s ease-in-out;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
 a {
-  color: #0B6E99;
-  background: #DDEBF1;
+  color: var(--link-fg);
+  background: var(--link-bg);
 }
 
 summary {
-  color: #0B6E99;
+  color: var(--link-fg);
   cursor: pointer;
 }
 
 nav > div > a {
-  color: #5ebaf3;
-  background: black;
+    color: #e92e9e;
+    background: #2e1724;
 }
 
 body {
+  background: var(--main-bg);
+  color: var(--main-fg);
 }
 
 nav {
-  background: black;
-  color: white;
+  background: #111;
+  color: #eee;
+  border-bottom: 1px solid #999;
 }
 
 pre {
-  background: #efefef;
+  background: var(--scnd-bg);
 }
 
 code {
-  background: #efefef;
+  background: var(--scnd-bg);
 }
 
 pre > code {
   background: transparent;
 }
+
