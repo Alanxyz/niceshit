@@ -1,5 +1,8 @@
 URL ?= https://niceshit.ml/
 
+LANG := es
+DESCRIPTION := Un blog penoso, insignificante y para nada serio.
+
 MD_NOTES := $(shell ls -b posts/*.md)
 HTML_NOTES := $(shell ls -b posts/*.md \
 							| sed -e 's,posts/,web/,g' -e 's/.md/.html/g')
@@ -14,6 +17,8 @@ web/%.html: posts/%.md
 	@echo procesando "$<"
 		@pandoc -s \
 			--metadata title="$$(grep '^# ' $< | sed -e 's,# ,,g')" \
+			--metadata lang="$(LANG)" \
+			--metadata description-meta="$(DESCRIPTION)" \
 			--template templates/post.html \
 			--css styles/main.css \
 			--css styles/ui.css \
@@ -39,5 +44,5 @@ feed:
 	;done >> web/feed.xml
 	@printf '</channel>\n</rss>' >> web/feed.xml
 	
-clean:
+clear:
 	@rm web/*.html
