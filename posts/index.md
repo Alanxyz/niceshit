@@ -4,11 +4,13 @@ Bienvenido a este penoso y para nada serio blog. Es difícil decir de que trata 
 
 ### Recientes
 
+- [Software que uso](software-que-uso.html)
 - [Así funciona esta web](asi-funciona-esta-web.html)
 
 ### Archivo 
 
 - **Tecnología**
+  - [Software que uso](software-que-uso.html)
   - [Así funciona esta web](asi-funciona-esta-web.html)
 - **Ciencia**
   - Sin publicaciones

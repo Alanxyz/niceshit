@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Software que uso</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/ui.css" />
+  <link rel="stylesheet" href="styles/theme.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<div class="nav-content">
+<h1><img src="assets/images/soycry.webp" alt />NiceShit!</h1>
+<a href="index.html">🏠 Inicio</a> |
+<a href="donaciones.html">💵 Donaciones</a> |
+<a href="feed.xml">🟧 RSS</a>
+</div>
+</nav>
+<div class="note">
+<h1 id="software-que-uso">Software que uso</h1>
+<p><img src="assets/images/desktop.webp" /></p>
+<p>Esta es una publicación que nadie pidió pero era necesario. De otro modo, este distinguido sitio web se habría llenado de publicaciones individuales para cada programa. No quiero que el contenido sobre tecnología, siendo este el mas insignificante, domine sobre el resto.</p>
+<p>Pueden notarse algunas características en común en esta lista. Existen características que, si bien, no son determinantes, si favorecen la decisión de usarse sobre otras alternativas. Esta es una lista resumida de ellas.</p>
+<ul>
+<li>Software libre. Esto no por ideología, simplemente el software libre, por su naturaleza, tiende a ser mas flexible y razonable.</li>
+<li>Funcionar como aplicación de terminal.</li>
+<li>de requerir un set de widgets gráficos, que sea GTK y no QT.</li>
+<li>No usar tecnologías web innecesariamente.</li>
+<li>Mltiplataforma.</li>
+<li>Estar en los repositorios estables de Debian. <em>Casi siempre</em> es un sello de calidad.</li>
+</ul>
+<p>Dejando claro lo anterior, dejo la recopilación que sigue.</p>
+<h2 id="general">General 🏠</h2>
+<h3 id="sistema-operativo">Sistema operativo</h3>
+<p>Uso Linux. No hace falta mencionar las bondades de los sistemas Linux aquí. Estas son las distribuciones que tengo</p>
+<ul>
+<li><p><a href="https://www.devuan.org/">Devuan</a>. Es la distribución que uso en mi maquina principal. Lo único que busco en una distribución es que sea confiable y Devuan es ridículamente estable. Para muchos Debian/Devuan es demasiado lento en cuanto a las actualizaciones, pero en mi caso nunca he tenido problemas al respecto. Incluso me gusta olvidarme de actualizar y cuando lo recuerdo sean un par de paquetes solamente.</p>
+<p>Uso Devuan ya que solventa el único problema que tenia con Debian: systemd. No tengo odio hacia systemd. Simplemente no funciona correctamente en mi maquina independientemente de la distribución.</p></li>
+<li><p><a href="https://voidlinux.org/">Void</a>. Comencé a usarlo solo por diversión, pero resulto ser una distribución maravillosa. Puesto que quería la experiencia completa, tengo la versión base con <a href="https://musl.libc.org/">musl</a>. La uso en una laptop para cuando salgo de causa. Tiene buenas características como una simpleza increíble, simpleza que la vuelve muy fácil de usar, repositorios amplios pero filtrados de basura. Es la distribución que mas recomiendo.</p></li>
+<li><p><a href="http://www.slackware.com/">Slackware</a>. La vieja favorita. La tengo instalada en maquinas viejas, casi destruidas, que pueden pasar años sin ser usadas.</p></li>
+</ul>
+<h3 id="entorno-de-escritorio">Entorno de escritorio</h3>
+<p>Luego de probar muchos tilling window manager me quede con <a href="https://github.com/conformal/spectrwm">Spectrwm</a>. La mayoría de los tilling window manger son, o bien lo mismo, o bien se pueden dejar igual con algunos ajustes. Habiendo dicho esto, Spectrum me gusta porque es el unico cuyas configuraciones por defecto me funcionan a la perfección. Le cambio los colores y poco mas. Por si fuera poco, cambiar los colores es realmente fácil gracias a su razonable sintaxis de configuración.</p>
+<p>Entre los escritorio completos, mi favorito es <a href="https://mate-desktop.org/">MATE</a>. No tengo ninguna sola queja con él. Comúnmente lo instalo junto a Spectrum por si acaso.</p>
+<p>Independientemente del entorno de escritorio en uso, siempre recomiendo usar <a href="https://jonls.dk/redshift/">Redshift</a>. Redshift modifica la temperatura del color de la pantalla descuerdo a la posición del sol en tu localización. Muy preciso y sano para los ojos.</p>
+<h3 id="shell">Shell</h3>
+<p><a href="https://www.gnu.org/software/bash/">Bash</a>. Es la primer interfaz de linea de comandos que use y, pese a haber probado las alternativas mas exoticas, no han sido necesarias. Bash hace lo que necesito y es universal. No suelo escribir scripts en Bash, en cambio me gusta que sean simplemente de Sh y dejo a Bash para el uso en la terminal.</p>
+<h3 id="terminal">Terminal</h3>
+<p>Uso <a href="https://sw.kovidgoyal.net/kitty/">Kitty</a>. Es buena. Tiene todas esas características modernas como el rende rizado por GPU, multiplexado de terminal y pestañas. Lamentablemente todas estas características son demasiado. Si necesito dividir la terminal, es porque no estoy usando un tilling window manager, y en ese caso, lo hago con <a href="https://github.com/tmux/tmux/wiki">tmux</a> pues, funciona en todas las terminales. La unica razón por la que no uso <a href="http://software.schmorp.de/pkg/rxvt-unicode.html">urxvt</a> es porque esta no tiene soporte para emojis (importante 🧐).</p>
+<h3 id="gestor-de-archivos">Gestor de archivos</h3>
+<p>Casi siempre la consola de comandos es suficiente para manejar mis archivos. Si la cosa se complica uso <a href="https://github.com/jarun/nnn">nnn</a>, mas que nada cuando los nombres de los archivos son extraños o necesito algo visual.</p>
+<h3 id="editor-de-texto">Editor de texto</h3>
+<p><a href="https://www.vim.org/">Vim</a>. Por mucho el programa mas importante de esta lista. Lo uso para muchas cosas: programar, escribir notas, tomar apuntes de clase, llevar un diario, hacer documentos y presentaciones, redactar esta publicación, et cetera. Cualquier cosa que tenga que ver con escribir, hacerla en Vim es la manera mas cómoda. Cuenta con características interesantes como un método de edición avanzado realmente cómodo, lenguaje de scripting propio y razonablemente fácil, un diccionario integrado, documentación integrada, funciona tanto en la terminal como en GUI, autocompletado, prácticamente esta en disponible en cualquier sistema, tiene un método para insertar caracteres matemáticos, guardado de sesión, edición remota y muchísimo mas. Resalto con entusiasmo lo cómodo que es escribir en Vim. Esta característica no es nada sin el resto, de otro modo seria fácil remplazar Vim con cualquier editor que cuente con un plugin que imite a Vim. Muchos dirian que es facil dejar otros editores igual que Vim, pero esto requeriría un esfuerzo innecesario. Creo que es un despropósito elegir algo y gastar energía en convertirlo decentemente en una imitación del otra cosa, que podría simplemente usar en un primer lugar. Solo vale la pena si las ventajas obtenidas lo valen para mi uso, y hasta ahora no me he encontrado en esa situación.</p>
+<p>He usado Emacs. Es magnifico. Pasar de Vim a Emacs es perder un par de ventajas para obtener muchísimas mas. En mi caso, las ventajas que trae cambiar a Emacs, no son útiles para mi forma de trabajar, en cambio, las ventajas que pierdo, sí las necesito.</p>
+<h2 id="estudios">Estudios 📚</h2>
+<h3 id="documentos">Documentos</h3>
+<p>Escribo usando la sintaxis de Markdown y luego uso <a href="https://pandoc.org/">pandoc</a> para pasarlo a otro formato. Pandoc es un asombroso software que comenzó como un conversor de archivos pero ahora tiene su atractiva filosofía. Esta es que todo documento debería ser un archivo de texto plano legible y funcional por si mismo. Sumando a su impecable conversion entre formatos, lo hace ideal para mi. Puedo escribir cualquier cosa en Markdown y Pandoc los convertirá a un documento pdf generado con XeLaTeX para la mayor calidad, o bien, generar diapositivas para usarlas en una presentación. Todo a partir del mismo archivo did texto plano, que por la filosofía anterior, también sirve sin necesidad de convertirlo.</p>
+<p>Mi visor favorito es <a href="https://pwmt.org/projects/zathura/">zathura</a>. Es ligero, permite una navegación entre documentos por teclado, tiene un modo presentación para interpretar las paginas como diapositivas, y tine un modo de recoloreado, que es indispensable para la lectura.</p>
+<p>No uso LaTeX personalmente. Si uso LaTeX es porque estoy haciendo un proyecto en equipo para la Universidad. No hay nada mejor para esto que <a href="https://www.overleaf.com/">Overleaf</a>. Permite el trabajo asíncrono, solo hay que compartir un enlace para acceder al documento, y no hay necesidad de instalar nada ya que funciona completamente en la nube.</p>
+<h3 id="análisis-de-datos">Análisis de datos</h3>
+<p>No tengo altas exigencias en eficiencia al hacer un análisis de datos. Uso la suit de <a href="https://scipy.org/">SciPy</a> que comprende los modulos para python: NumPy, SimPy, Pandas, Matploitlib y la propia SciPy. Es lo que se usar, me siento cómodo con SciPy y nunca he necesitado nada mas.</p>
+<h2 id="internet">Internet 🌐</h2>
+<h3 id="navegador">Navegador</h3>
+<p>Estoy usando el navegador <a href="https://brave.com/">Brave</a>. Es incomodo estar basado en Chromium pero tiene cosas agradables, como el bloqueo de publicidad por defecto. También uso <a href="https://surf.suckless.org/">surf</a>, un navegador ligero basado en WebKit GTK. Usaría únicamente surf, pero algunas webs no funcionan correctamente.</p>
+<h3 id="email">Email</h3>
+<p>No he tenido el valor para montarme mi propio servidor de correo electrónico. Por ahora estoy usando <a href="https://protonmail.com/">ProtonMail</a>, no por su premisa de la privacidad, sino por ser el servicio menos malo que encontré.</p>
+<h3 id="lector-rss">Lector RSS</h3>
+<p>https://newsboat.org/</p>
+<h3 id="nube-y-sincronización">Nube y sincronización</h3>
+<p>La mejor solución ha sido <a href="https://syncthing.net/">Synchting</a>. Todos los NAS tienen problemas importantes. Son costosos, solo puedes usarlos dentro de tu red y bastante peligrosos: si el servidor muere, tus archivos también. Synchting soluciona todos estos problemas. Es un sistema descentralizado que utiliza tus dispositivos como nodos. No hay que adquirir ningún servidor físico del que toda tu información dependa. Puesto que esos nodos pueden ser un celular o una laptop, puedes tener tus archivos a la mano si estas fuera de casa, trabajar con ellos, y, al volver a casa se integraran al resto de dispositivos actualizándose mutuamente.</p>
+<p>Tengo también un router que permite insertar una memoria USB en el. Cree un servidor FTP que me permite acceder a los archivos del pendive desde cualquier dispositivo.</p>
+<h3 id="gestor-de-contraseñas">Gestor de contraseñas</h3>
+<p>Guardo mis contraseñas cifradas con GPG usando el estándar <a href="https://www.passwordstore.org/">pass</a>. Funciona perfecto. Como es un programa de interfaz de consola de comandos, hice un script que automáticamente copia al cortapapeles la contraseña que elija. Es mucho mas cómodo de lo que pense.</p>
+<h2 id="otros">Otros 📦</h2>
+<h3 id="multimedia">Multimedia</h3>
+<p>Para la visualización, uso <a href="https://mpv.io/">mvp</a> para audio y video, y <a href="https://feh.finalrewind.org/">feh</a> para las imágenes. Funcionan perfecto y no tienen funciones de mas ni dependencias ridiculas.</p>
+<h3 id="finanzas">Finanzas</h3>
+<p>Realizo mi contabilidad personal con <a href="https://gnucash.org/">cash</a>. Fue un poco difícil acostumbrarme a los libros de doble entrada pero las ventajas son grandes.</p>
+<p>No uso hojas de calculo. No entiendo como la gente puede usar esa basura. Si necesito hacer ese tipo de cosas uso <a href="https://www.r-project.org/">R</a>. Miles de veces mejor pensado que cualquier programa de hojas de calculo.</p>
+</div>
+</body>
+</html>

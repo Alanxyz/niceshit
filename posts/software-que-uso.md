@@ -1,0 +1,106 @@
+# Software que uso
+
+![](assets/images/desktop.webp)
+
+Esta es una publicación que nadie pidió pero era necesario. De otro modo, este distinguido sitio web se habría llenado de publicaciones individuales para cada programa. No quiero que el contenido sobre tecnología, siendo este el mas insignificante, domine sobre el resto.
+
+Pueden notarse algunas características en común en esta lista. Existen características que, si bien, no son determinantes, si favorecen la decisión de usarse sobre otras alternativas. Esta es una lista resumida de ellas.
+
+- Software libre. Esto no por ideología, simplemente el software libre, por su naturaleza, tiende a ser mas flexible y razonable.
+- Funcionar como aplicación de terminal.
+- de requerir un set de widgets gráficos, que sea GTK y no QT.
+- No usar tecnologías web innecesariamente.
+- Mltiplataforma.
+- Estar en los repositorios estables de Debian. _Casi siempre_ es un sello de calidad.
+
+Dejando claro lo anterior, dejo la recopilación que sigue.
+
+## General 🏠
+
+### Sistema operativo
+
+Uso Linux. No hace falta mencionar las bondades de los sistemas Linux aquí. Estas son las distribuciones que tengo
+
+- [Devuan](https://www.devuan.org/). Es la distribución que uso en mi maquina principal. Lo único que busco en una distribución es que sea confiable y Devuan es ridículamente estable. Para muchos Debian/Devuan es demasiado lento en cuanto a las actualizaciones, pero en mi caso nunca he tenido problemas al respecto. Incluso me gusta olvidarme de actualizar y cuando lo recuerdo sean un par de paquetes solamente.
+
+  Uso Devuan ya que solventa el único problema que tenia con Debian: systemd. No tengo odio hacia systemd. Simplemente no funciona correctamente en mi maquina independientemente de la distribución.
+
+- [Void](https://voidlinux.org/). Comencé a usarlo solo por diversión, pero resulto ser una distribución maravillosa. Puesto que quería la experiencia completa, tengo la versión base con [musl](https://musl.libc.org/). La uso en una laptop para cuando salgo de causa. Tiene buenas características como una simpleza increíble, simpleza que la vuelve muy fácil de usar, repositorios amplios pero filtrados de basura. Es la distribución que mas recomiendo.
+ 
+- [Slackware](http://www.slackware.com/). La vieja favorita. La tengo instalada en maquinas viejas, casi destruidas, que pueden pasar años sin ser usadas.
+
+### Entorno de escritorio
+
+Luego de probar muchos tilling window manager me quede con [Spectrwm](https://github.com/conformal/spectrwm). La mayoría de los tilling window manger son, o bien lo mismo, o bien se pueden dejar igual con algunos ajustes. Habiendo dicho esto, Spectrum me gusta porque es el unico cuyas configuraciones por defecto me funcionan a la perfección. Le cambio los colores y poco mas. Por si fuera poco, cambiar los colores es realmente fácil gracias a su razonable sintaxis de configuración.
+
+Entre los escritorio completos, mi favorito es [MATE](https://mate-desktop.org/). No tengo ninguna sola queja con él. Comúnmente lo instalo junto a Spectrum por si acaso.
+
+Independientemente del entorno de escritorio en uso, siempre recomiendo usar [Redshift](https://jonls.dk/redshift/). Redshift modifica la temperatura del color de la pantalla descuerdo a la posición del sol en tu localización. Muy preciso y sano para los ojos.
+
+### Shell
+
+[Bash](https://www.gnu.org/software/bash/). Es la primer interfaz de linea de comandos que use y, pese a haber probado las alternativas mas exoticas, no han sido necesarias. Bash hace lo que necesito y es universal. No suelo escribir scripts en Bash, en cambio me gusta que sean simplemente de Sh y dejo a Bash para el uso en la terminal.
+
+### Terminal
+
+Uso [Kitty](https://sw.kovidgoyal.net/kitty/). Es buena. Tiene todas esas características modernas como el rende rizado por GPU, multiplexado de terminal y pestañas. Lamentablemente todas estas características son demasiado. Si necesito dividir la terminal, es porque no estoy usando un tilling window manager, y en ese caso, lo hago con [tmux](https://github.com/tmux/tmux/wiki) pues, funciona en todas las terminales. La unica razón por la que no uso [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html) es porque esta no tiene soporte para emojis (importante 🧐). 
+
+### Gestor de archivos
+
+Casi siempre la consola de comandos es suficiente para manejar mis archivos. Si la cosa se complica uso [nnn](https://github.com/jarun/nnn), mas que nada cuando los nombres de los archivos son extraños o necesito algo visual.
+
+### Editor de texto
+
+[Vim](https://www.vim.org/). Por mucho el programa mas importante de esta lista. Lo uso para muchas cosas: programar, escribir notas, tomar apuntes de clase, llevar un diario, hacer documentos y presentaciones, redactar esta publicación, et cetera. Cualquier cosa que tenga que ver con escribir, hacerla en Vim es la manera mas cómoda. Cuenta con características interesantes como un método de edición avanzado realmente cómodo, lenguaje de scripting propio y razonablemente fácil, un diccionario integrado, documentación integrada, funciona tanto en la terminal como en GUI, autocompletado, prácticamente esta en disponible en cualquier sistema, tiene un método para insertar caracteres matemáticos, guardado de sesión, edición remota y muchísimo mas. Resalto con entusiasmo lo cómodo que es escribir en Vim. Esta característica no es nada sin el resto, de otro modo seria fácil remplazar Vim con cualquier editor que cuente con un plugin que imite a Vim. Muchos dirian que es facil dejar otros editores igual que Vim, pero esto requeriría un esfuerzo innecesario. Creo que es un despropósito elegir algo y gastar energía en convertirlo decentemente en una imitación del otra cosa, que podría simplemente usar en un primer lugar. Solo vale la pena si las ventajas obtenidas lo valen para mi uso, y hasta ahora no me he encontrado en esa situación.
+
+He usado Emacs. Es magnifico. Pasar de Vim a Emacs es perder un par de ventajas para obtener muchísimas mas. En mi caso, las ventajas que trae cambiar a Emacs, no son útiles para mi forma de trabajar, en cambio, las ventajas que pierdo, sí las necesito. 
+
+## Estudios 📚
+
+### Documentos
+
+Escribo usando la sintaxis de Markdown y luego uso [pandoc](https://pandoc.org/) para pasarlo a otro formato. Pandoc es un asombroso software que comenzó como un conversor de archivos pero ahora tiene su atractiva filosofía. Esta es que todo documento debería ser un archivo de texto plano legible y funcional por si mismo. Sumando a su impecable conversion entre formatos, lo hace ideal para mi. Puedo escribir cualquier cosa en Markdown y Pandoc los convertirá a un documento pdf generado con XeLaTeX para la mayor calidad, o bien, generar diapositivas para usarlas en una presentación. Todo a partir del mismo archivo did texto plano, que por la filosofía anterior, también sirve sin necesidad de convertirlo. 
+
+Mi visor favorito es [zathura](https://pwmt.org/projects/zathura/). Es ligero, permite una navegación entre documentos por teclado, tiene un modo presentación para interpretar las paginas como diapositivas, y tine un modo de recoloreado, que es indispensable para la lectura. 
+
+No uso LaTeX personalmente. Si uso LaTeX es porque estoy haciendo un proyecto en equipo para la Universidad. No hay nada mejor para esto que [Overleaf](https://www.overleaf.com/). Permite el trabajo asíncrono, solo hay que compartir un enlace para acceder al documento, y no hay necesidad de instalar nada ya que funciona completamente en la nube.
+
+### Análisis de datos
+
+No tengo altas exigencias en eficiencia al hacer un análisis de datos. Uso la suit de [SciPy](https://scipy.org/) que comprende los modulos para python: NumPy, SimPy, Pandas, Matploitlib y la propia SciPy. Es lo que se usar, me siento cómodo con SciPy y nunca he necesitado nada mas.
+
+## Internet 🌐
+
+### Navegador
+
+Estoy usando el navegador [Brave](https://brave.com/). Es incomodo estar basado en Chromium pero tiene cosas agradables, como el bloqueo de publicidad por defecto. También uso [surf](https://surf.suckless.org/), un navegador ligero basado en WebKit GTK. Usaría únicamente surf, pero algunas webs no funcionan correctamente.
+
+### Email
+
+No he tenido el valor para montarme mi propio servidor de correo electrónico. Por ahora estoy usando [ProtonMail](https://protonmail.com/), no por su premisa de la privacidad, sino por ser el servicio menos malo que encontré. 
+
+### Lector RSS
+
+https://newsboat.org/
+
+### Nube y sincronización 
+
+La mejor solución ha sido [Synchting](https://syncthing.net/). Todos los NAS tienen problemas importantes. Son costosos, solo puedes usarlos dentro de tu red y bastante peligrosos: si el servidor muere, tus archivos también. Synchting soluciona todos estos problemas. Es un sistema descentralizado que utiliza tus dispositivos como nodos. No hay que adquirir ningún servidor físico del que toda tu información dependa. Puesto que esos nodos pueden ser un celular o una laptop, puedes tener tus archivos a la mano si estas fuera de casa, trabajar con ellos, y, al volver a casa se integraran al resto de dispositivos actualizándose mutuamente. 
+
+Tengo también un router que permite insertar una memoria USB en el. Cree un servidor FTP que me permite acceder a los archivos del pendive desde cualquier dispositivo. 
+
+### Gestor de contraseñas
+
+Guardo mis contraseñas cifradas con GPG usando el estándar [pass](https://www.passwordstore.org/). Funciona perfecto. Como es un programa de interfaz de consola de comandos, hice un script que automáticamente copia al cortapapeles la contraseña que elija. Es mucho mas cómodo de lo que pense.
+
+## Otros 📦
+
+### Multimedia
+
+Para la visualización, uso [mvp](https://mpv.io/) para audio y video, y [feh](https://feh.finalrewind.org/) para las imágenes. Funcionan perfecto y no tienen funciones de mas ni dependencias ridiculas.
+
+### Finanzas
+
+Realizo mi contabilidad personal con [cash](https://gnucash.org/). Fue un poco difícil acostumbrarme a los libros de doble entrada pero las ventajas son grandes.
+
+No uso hojas de calculo. No entiendo como la gente puede usar esa basura. Si necesito hacer ese tipo de cosas uso [R](https://www.r-project.org/). Miles de veces mejor pensado que cualquier programa de hojas de calculo.
