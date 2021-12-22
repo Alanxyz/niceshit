@@ -81,7 +81,7 @@ No he tenido el valor para montarme mi propio servidor de correo electrónico. P
 
 ### Lector RSS
 
-https://newsboat.org/
+Usar un lector RSS es indispensable para estar al tanto de sitios webs y redes sociales sin comerte hectáreas de publicidad y contenido recomendado por empresas feas. Por su simplicidad, uso [News boat](https://newsboat.org/).
 
 ### Nube y sincronización 
 
