@@ -4,13 +4,13 @@
 
 Esta es una publicación que nadie pidió pero era necesario. De otro modo, este distinguido sitio web se habría llenado de publicaciones individuales para cada programa. No quiero que el contenido sobre tecnología, siendo este el mas insignificante, domine sobre el resto.
 
-Pueden notarse algunas características en común en esta lista. Existen características que, si bien, no son determinantes, si favorecen la decisión de usarse sobre otras alternativas. Esta es una lista resumida de ellas.
+Pueden notarse algunas características en común en esta lista. Existen características que, si bien, no son determinantes, sí favorecen la decisión de usarse sobre otras alternativas. Esta es una lista resumida de ellas.
 
 - Software libre. Esto no por ideología, simplemente el software libre, por su naturaleza, tiende a ser mas flexible y razonable.
 - Funcionar como aplicación de terminal.
-- de requerir un set de widgets gráficos, que sea GTK y no QT.
+- De requerir un set de widgets gráficos, que sea GTK y no QT.
 - No usar tecnologías web innecesariamente.
-- Mltiplataforma.
+- Multiplataforma.
 - Estar en los repositorios estables de Debian. _Casi siempre_ es un sello de calidad.
 
 Dejando claro lo anterior, dejo la recopilación que sigue.
@@ -51,9 +51,9 @@ Casi siempre la consola de comandos es suficiente para manejar mis archivos. Si 
 
 ### Editor de texto
 
-[Vim](https://www.vim.org/). Por mucho el programa mas importante de esta lista. Lo uso para muchas cosas: programar, escribir notas, tomar apuntes de clase, llevar un diario, hacer documentos y presentaciones, redactar esta publicación, et cetera. Cualquier cosa que tenga que ver con escribir, hacerla en Vim es la manera mas cómoda. Cuenta con características interesantes como un método de edición avanzado realmente cómodo, lenguaje de scripting propio y razonablemente fácil, un diccionario integrado, documentación integrada, funciona tanto en la terminal como en GUI, autocompletado, prácticamente esta en disponible en cualquier sistema, tiene un método para insertar caracteres matemáticos, guardado de sesión, edición remota y muchísimo mas. Resalto con entusiasmo lo cómodo que es escribir en Vim. Esta característica no es nada sin el resto, de otro modo seria fácil remplazar Vim con cualquier editor que cuente con un plugin que imite a Vim. Muchos dirian que es facil dejar otros editores igual que Vim, pero esto requeriría un esfuerzo innecesario. Creo que es un despropósito elegir algo y gastar energía en convertirlo decentemente en una imitación del otra cosa, que podría simplemente usar en un primer lugar. Solo vale la pena si las ventajas obtenidas lo valen para mi uso, y hasta ahora no me he encontrado en esa situación.
+[Vim](https://www.vim.org/). Por mucho el programa mas importante de esta lista. Lo uso para muchas cosas: programar, escribir notas, tomar apuntes de clase, llevar un diario, hacer documentos y presentaciones, redactar esta publicación, et cetera. Cualquier cosa que tenga que ver con escribir, hacerla en Vim es la manera mas cómoda. Cuenta con características interesantes como un método de edición avanzado realmente cómodo, lenguaje de scripting propio y razonablemente fácil, un diccionario integrado, documentación integrada, funciona tanto en la terminal como en GUI, autocompletado, prácticamente esta en disponible en cualquier sistema, tiene un método para insertar caracteres matemáticos, guardado de sesión, edición remota y muchísimo mas. Resalto con entusiasmo lo cómodo que es escribir en Vim. Esta característica no es nada sin el resto, de otro modo seria fácil remplazar Vim con cualquier editor que cuente con un plugin que imite a Vim. Muchos dirían que es fácil dejar otros editores igual que Vim, pero esto requeriría un esfuerzo innecesario. Creo que es un despropósito elegir algo y gastar energía en convertirlo decentemente en una imitación del otra cosa que podría simplemente usar en un primer lugar. Solo vale la pena si las ventajas obtenidas lo valen para mi uso, y hasta ahora no me he encontrado en esa situación.
 
-He usado Emacs. Es magnifico. Pasar de Vim a Emacs es perder un par de ventajas para obtener muchísimas mas. En mi caso, las ventajas que trae cambiar a Emacs, no son útiles para mi forma de trabajar, en cambio, las ventajas que pierdo, sí las necesito. 
+He usado Emacs. Es magnifico. Pasar de Vim a Emacs es perder un par de ventajas para obtener muchísimas mas. En mi caso, las ventajas que trae cambiar a Emacs no son útiles para mi forma de trabajar, en cambio, las ventajas que pierdo, sí las necesito. 
 
 ## Estudios 📚
 
@@ -91,13 +91,13 @@ Tengo también un router que permite insertar una memoria USB en el. Cree un ser
 
 ### Gestor de contraseñas
 
-Guardo mis contraseñas cifradas con GPG usando el estándar [pass](https://www.passwordstore.org/). Funciona perfecto. Como es un programa de interfaz de consola de comandos, hice un script que automáticamente copia al cortapapeles la contraseña que elija. Es mucho mas cómodo de lo que pense.
+Guardo mis contraseñas cifradas con GPG usando el estándar [pass](https://www.passwordstore.org/). Funciona perfecto. Como es un programa de interfaz de consola de comandos, hice un script que automáticamente copia al cortapapeles la contraseña que elija. Es mucho mas cómodo de lo que pensé.
 
 ## Otros 📦
 
 ### Multimedia
 
-Para la visualización, uso [mvp](https://mpv.io/) para audio y video, y [feh](https://feh.finalrewind.org/) para las imágenes. Funcionan perfecto y no tienen funciones de mas ni dependencias ridiculas.
+Para la visualización, uso [mvp](https://mpv.io/) para audio y video, y [feh](https://feh.finalrewind.org/) para las imágenes. Funcionan perfecto y no tienen funciones de mas ni dependencias ridículas.
 
 ### Finanzas
 

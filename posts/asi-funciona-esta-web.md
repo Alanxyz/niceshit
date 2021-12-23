@@ -12,7 +12,7 @@ Las cosas que resumen las capacidades de esta web son:
 
 - Generación de paginas estáticas
 - Solo HTML, CSS y JavaScript
-- Soporte de para Markdown
+- Soporte para Markdown
 - Feed mediante RSS
 - Optimización de imágenes
 - Flexibilidad, minimalismo e independencia
