@@ -27,8 +27,8 @@ img {
 }
 
 a {
-  color: var(--link-fg);
-  background: var(--link-bg);
+  color: var(--main-fg);
+  border-bottom: 1px solid var(--link-fg);
 }
 
 summary {
@@ -36,20 +36,9 @@ summary {
   cursor: pointer;
 }
 
-nav > div > a {
-    color: #e92e9e;
-    background: #2e1724;
-}
-
 body {
   background: var(--main-bg);
   color: var(--main-fg);
-}
-
-nav {
-  background: #111;
-  color: white;
-  border-bottom: 1px solid #999;
 }
 
 pre {
@@ -64,3 +53,7 @@ pre > code {
   background: transparent;
 }
 
+nav {
+  border-top: 1px solid var(--main-fg);
+  border-bottom: 2px solid var(--main-fg);
+}

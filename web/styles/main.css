@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Times New Roman', serif;
   font-size: 17px;
   line-height: 1.6;
 
@@ -24,10 +24,13 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
+  font-weight: 100;
+  text-align: center;
 }
 
 h1 {
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 h1:after {
@@ -37,6 +40,10 @@ h1:after {
 
 h2 {
   font-size: 2rem;
+  font-style: italic;
+  border-top: 4px double var(--main-fg);
+  border-bottom: 1px solid var(--main-fg);
+  padding: 30px 10px;
 }
 
 h3 {
@@ -93,8 +100,7 @@ pre > code {
   border-radius: 0;
 }
 
-a {
-  padding-left: 6px;
-  padding-right: 6px;
-  border-radius: 6px;
+ul, ol {
+  max-width: 600px;
+  margin: auto;
 }

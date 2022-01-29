@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-$for(author-meta)$
-  <meta name="author" content="$author-meta$" />
-$endfor$
-$if(date-meta)$
-  <meta name="dcterms.date" content="$date-meta$" />
-$endif$
-$if(keywords)$
-  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
-$endif$
-$if(description-meta)$
-  <meta name="description" content="$description-meta$" />
-$endif$
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
-  <style>
-    $styles.html()$
-  </style>
-$for(css)$
-  <link rel="stylesheet" href="$css$" />
-$endfor$
-$if(math)$
-  $math$
-$endif$
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-$for(header-includes)$
-  $header-includes$
-$endfor$
-</head>
-<body>
-$for(include-before)$
-$include-before$
-$endfor$
-<nav id="$idprefix$TOC" role="doc-toc">
-<div class="nav-content">
-<h1><img src="assets/images/soycry.webp" alt />NiceShit!</h1>
-<a href="index.html">🏠 Inicio</a> |
-<a href="donaciones.html">💵 Donaciones</a> |
-<a href="feed.xml">🟧 RSS</a>
-</div>
-$if(toc)$
-$if(toc-title)$
-<h2 id="$idprefix$toc-title">$toc-title$</h2>
-$endif$
-$table-of-contents$
-$endif$
-</nav>
-<div class="note">
-$body$
-</div>
-$for(include-after)$
-$include-after$
-$endfor$
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    $for(author-meta)$
+    <meta name="author" content="$author-meta$" />
+    $endfor$
+    $if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$" />
+    $endif$
+    $if(keywords)$
+    <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+    $endif$
+    $if(description-meta)$
+    <meta name="description" content="$description-meta$" />
+    $endif$
+    <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+    <style>
+$styles.html()$
+    </style>
+    $for(css)$
+    <link rel="stylesheet" href="$css$" />
+    $endfor$
+    $if(math)$
+    $math$
+    $endif$
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    $for(header-includes)$
+    $header-includes$
+    $endfor$
+  </head>
+
+  <body>
+    $for(include-before)$
+    $include-before$
+    $endfor$
+
+    <header>
+      <div>
+        <h1><img src="assets/images/soycry.webp" alt />NiceShit!</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">🏠 Inicio</a>
+      <a href="donaciones.html">💵 Donaciones</a>
+      <a href="feed.xml">🟧 RSS</a>
+    </nav>
+
+    <section>
+      <article class="note">
+        $body$
+      </article>
+    </section>
+
+    $if(toc)$
+    <div class="toc">
+      $if(toc-title)$
+      <h2 id="$idprefix$toc-title">$toc-title$</h2>
+      $endif$
+      $table-of-contents$
+    </div>
+    $endif$
+
+    $for(include-after)$
+    $include-after$
+    $endfor$
+  </body>
 </html>

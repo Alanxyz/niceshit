@@ -13,7 +13,7 @@ WEBP_IMAGES := $(shell ls -b images/* \
 
 all: $(HTML_NOTES) $(WEBP_IMAGES)
 
-web/%.html: posts/%.md
+web/%.html: posts/%.md templates/post.html
 	@echo procesando "$<"
 		@pandoc -s \
 			--metadata title="$$(grep '^# ' $< | sed -e 's,# ,,g')" \
