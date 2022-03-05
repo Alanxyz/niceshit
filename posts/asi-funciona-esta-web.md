@@ -1,6 +1,6 @@
 # Así funciona esta web
 
-![](assets/images/pepe-hacker.webp)
+![](attachments/pepe-hacker.webp)
 
 La funcionalidad de un blog no es mas que desplegar documentos de texto y distribuirlos mediante RSS o una subscripción por correo electrónico. Tareas simples que, por lo tanto, deberían realizarse de forma simple.
 
@@ -25,10 +25,9 @@ La estructura de directorios es la siguiente
 niceshit
 ├── Makefile
 ├── posts
-├── images
 ├── templates
 └── web
-    ├── assets
+    ├── attachments
     ├── scripts
     └── styles
 ```

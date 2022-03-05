@@ -1,6 +1,6 @@
 # Software que uso
 
-![](assets/images/desktop.webp)
+![](attachments/desktop.webp)
 
 Esta es una publicación que nadie pidió pero era necesario. De otro modo, este distinguido sitio web se habría llenado de publicaciones individuales para cada programa. No quiero que el contenido sobre tecnología, siendo este el mas insignificante, domine sobre el resto.
 

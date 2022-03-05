@@ -9,13 +9,16 @@ body {
   text-rendering: optimizeLegibility;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
-
-.note > p > img {
+img {
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+figcaption {
+  text-align: center;
 }
 
 p {
@@ -104,3 +107,12 @@ ul, ol {
   max-width: 600px;
   margin: auto;
 }
+
+.cols {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-1 { display: flex; flex: 1; }
+.col-2 { display: flex; flex: 2; }
+.col-3 { display: flex; flex: 3; }

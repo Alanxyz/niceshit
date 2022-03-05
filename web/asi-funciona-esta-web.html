@@ -88,7 +88,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     
     <header>
       <div>
-        <h1><img src="assets/images/soycry.webp" alt />NiceShit!</h1>
+        <h1><img src="attachments/soycry.webp" alt />NiceShit!</h1>
       </div>
     </header>
 
@@ -101,7 +101,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <section>
       <article class="note">
         <h1 id="así-funciona-esta-web">Así funciona esta web</h1>
-        <p><img src="assets/images/pepe-hacker.webp" /></p>
+        <p><img src="attachments/pepe-hacker.webp" /></p>
         <p>La funcionalidad de un blog no es mas que desplegar documentos de texto y distribuirlos mediante RSS o una subscripción por correo electrónico. Tareas simples que, por lo tanto, deberían realizarse de forma simple.</p>
         <p>He visto muchas webs con menos necesidades usando tecnologías monstruosamente grandes innecesariamente. La mayoría de esas tecnologías son algo como <em>“Mírame. Soluciono este problema que no sabias que tenias y estas empresas me usan. Úsame en tu proyecto”</em>. Existen cosas útiles como <a href="https://reactjs.org/">React</a>, si tienes una plataforma compleja o esperas que se vuelva compleja. Cuando no es el caso, parece que hay quienes solo usan las cosas grandes para mostrarnos que saben usarlas.</p>
         <h2 id="características-y-estructura">Características y estructura</h2>
@@ -119,10 +119,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         <pre><code>niceshit
         ├── Makefile
         ├── posts
-        ├── images
         ├── templates
         └── web
-            ├── assets
+            ├── attachments
             ├── scripts
             └── styles</code></pre>
         <p>En la carpeta <code>posts</code> se guardan <em>todas</em> las paginas de esta web escritas en formato Markdown. La idea de esto es poder usar cualquier editor sin preocuparme por la compatibilidad del formato. Las paginas se exportan a código HTML mediante <a href="https://pandoc.org/">Pandoc</a> usando alguna de las <a href="https://pandoc.org/MANUAL.html#templates">plantillas</a> que se encuentran en <code>templates</code>. Las imágenes que puedan tener estos documentos se guardan en <code>images</code> y se optimizan para la web mediante <a href="https://developers.google.com/speed/webp/">img2webp</a>. Todo termina dentro de <code>web</code> listo para publicarse. Ademas, hay carpetas para colocar hojas de estilos y scripts para mejorar la apariencia e interactividad de la web.</p>
