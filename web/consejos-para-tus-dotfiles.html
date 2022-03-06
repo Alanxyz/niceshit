@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+                    <meta name="description" content="Un blog penoso, insignificante y para nada serio." />
+        <title>Consejos para tus _dotfiles_</title>
+    <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+    </style>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/ui.css" />
+        <link rel="stylesheet" href="styles/theme.css" />
+            <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+      </head>
+
+  <body>
+    
+    <header>
+      <div>
+        <h1><img src="attachments/soycry.webp" alt />NiceShit!</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">🏠 Inicio</a>
+      <a href="donaciones.html">💵 Donaciones</a>
+      <a href="feed.xml">🟧 RSS</a>
+    </nav>
+
+    <section>
+      <article class="note">
+        <h1 id="consejos-para-tus-dotfiles">Consejos para tus <em>dotfiles</em></h1>
+        <p><img src="attachments/dotfiles.webp" /></p>
+        <p>Recientemente tuve la suficiente cantidad de tiempo para darle algo de mantenimiento a mi computadora personal. Entre las cosas que hice, una importante fue mi cambio de sistema operativo de Debian Linux a Devan Linux. Para esta nueva instalación tuve que hacer respaldos de mis archivos y configuraciones.</p>
+        <p>Cambiar de sistema operativo típicamente seria una tarea muy molesta, llena de contratiempos, pero teniendo los desfiles bien controlados es realmente solo cuestión del tiempo que pedo durar la instalación. Paradójicamente, entre mas fácil para un usuario es hacer una reinstalación, menos frecuentemente suele necesitar hacer una. Esto ultimo, contrario a un usuario nuevo que tiene mucho por probar y poco tiempo para probar.</p>
+        <h2 id="respalda-tus-configuraciones">Respalda tus configuraciones</h2>
+        <p>Los <em>dotfiles</em> son para guardar. Nunca sabes cuando tendras que cambiar de PC o perderas la informacion de tu maquina actual. Cuado los guardes, has respaldos. Puedes usar la nube de tu preferencia, meterlos en un disco duro de por allí, pero lo mas comun es meterlas en un repositorio de Git. Normalmente estos se suben a <a href="https://github.com/">Github</a> o <a href="https://gitlab.com/">Gitlab</a>.</p>
+        <h3 id="conserva-solo-lo-necesario">Conserva solo lo necesario</h3>
+        <p>No hay necesidad de incluir en tus <em>dotfiles</em> todas las configuraciones que tengas en tu sistema. Puede que sea insignificante y puedas vivir sin ella, o que sea tan trivial realizarla que no merezca mucho la pena guardar el archivo de configuración. Solo aumentara la dificultad de gestionar tus configuraciones. En cambio, solo guarda las configuraciones mas significativas para ti, como las del software que mas frecuentas cuando estas tras el teclado, o cosas que necesites por una razón de accesibilidad.</p>
+        <h3 id="comparte-tus-dotfiles">Comparte tus <em>dotfiles</em></h3>
+        <p>Cuando ya tienes tus <em>dotfiles</em> guardados, sin informacion sensible, sin archivos innutiies, no pierdes nada con compartirlos. Pueden ayudar a alguien mas. Con colocarlos en Github y ponerle la etiqueta <code>dotfiles</code> al repositorio, ya estan en un buen lugar accesible para los demás. Hay otras buenas webs dedicadas a compartir las configuraciones. Algunas de ellas son: <a href="reddit.com/r/unixporn">Unixporn</a> y <a href="http://dotshare.it/">Dotshare</a>.</p>
+        <p>Recuerda revisar las configuraciones de otros usuarios ocasionalmente. Pudes sacar inspiración e ideas para mejorar tus propios <em>dotfiles</em>. Solo no le dediques demasiado tiempo a esto. Puede ser hipnótico inspeccionar las configuraciones de otros usuarios, en especial si se dedican a algo similar a lo que te dedicas tú.</p>
+        <p>Puedes encontrar mis <em>dotfiles</em> por <a href="https://github.com/AstralCam/dotfiles">aquí</a>.</p>
+        <h3 id="cuando-algo-deja-de-ser-una-configuración">Cuando algo deja de ser una configuración</h3>
+        <p>Las configuraciones para algun programa a veces crecen demasiado. Tal vez comenzaste configurando un atajo de teclado para tu editor de código; después ese atajo se fue haciendo mas sofisticado; tal vez se convirtió en algo tan grande que es mejor separarlo de tus configuraciones personales y crear un plugin para el editor. Pudo haber sido inicialmente un script que creció tanto que perfectamente puede considerarse como un programa completo.</p>
+        <p>Si inconscientemente terminaste escribiendo software en tus configuraciones, separalo. Publicarlo en Github puede ser una gran idea. Le servirá a otros usuarios y probablemente recibas contribuciones al código que mejoren ese pequeño programa. Es menos probable que alguien contribuya si solo está dentro de tus <em>dotfiles</em>.</p>
+        <h2 id="manejar-los-dotfiles">Manejar los <em>dotfiles</em></h2>
+        <p>Ahora, gestionar las configuraciones puede ser aburrido y tedioso. Por suerte, existe la manera definitiva de hacerlo: usando stow.</p>
+        <h3 id="usa-stow">Usa stow</h3>
+        <p><a href="https://www.gnu.org/software/stow/">Stow</a> es una maravilla. La idea de stow es ahorrarnos el problema de tener que copiar nuestros archivos de configuración a sus ubicaciones correspondientes cada que las queremos usar, o también, copiar de vuelta los archivos al repositorio luego de hacer una modificación. Con stow, tenemos un unico lugar donde van todas las configuraciones, luego con se enlazan usando links entre archivos para ponerlos en su localización.</p>
+        <p>Al usar stow necesitamos de una carpeta que este dentro de <code>$HOME</code> que contenga los <em>dotfiles</em>. Esta carpeta debe estar organizada de esta forma: carpetas con nombres de los programas que dentro contienen todo lo necesario para configurarse como si fuesen otro directorio HOME. Por ejemplo:</p>
+        <pre class="text"><code>~/.dotfiles/
+        ├── bash
+        │   └── .bashrc
+        ├── scripts
+        │   └── .local
+        │       └── bin
+        │           ├── sync
+        │           └── colortest
+        ├── urxvt
+        │   └── .Xresources
+        ├── vim
+        │   └── .vimrc
+        └── zathura
+            └── .config
+                └── zathura
+                    └── zathurarc</code></pre>
+        <p>Para <em>instalar</em> nuestras configuraciones hacemos, por ejemplo, <code>stow vim</code> para instalar solo los archivos de configuracion de Vim, <code>stow urxvt bash</code> para los de Bash y Urxvt, y <code>stow *</code> para instalar todos los archivos de todos los programas.</p>
+        <p>Una vez instalados tendremos que si editamos <code>~/.vimrc</code> en realidad estaremos editando <code>~/.dotfiles/vim/.vimrc</code>, por lo que los cambios se harán en el repositorio y Git los rastreara. Por el lado contrario, si hacemos <code>git pull</code> en el repositorio, este se actualizara y con él lo harán los archivos pues están enlazados.</p>
+        <p>Stow, ademas de solucionar el ubicar los archivos de configuracion, tambien nos propone una estructura de directorios funcional para almacenarlos.</p>
+        <h3 id="usa-los-.gitignore">Usa los .gitignore</h3>
+        <p>Hay archivos que no queremos que Git agregue al repositorio. Usando un archivo <code>.gitignore</code> podemos hacer que sean ignorados. Por ejemplo, si usamos un el lector de RSS Newsboat, definitivamente no queremos que se guarde el cache, el hisotorial, ni nuestras URLs privadas de las webs que seguimos. Lamentablemente, Newsboat coloca estos archivos en la misma carpeta que donde va la configuración. Basta con agregar un archvio llamado <code>.gitignore</code> que contenga el siguiente texto.</p>
+        <pre class="text"><code>cache.db
+        cache.db.lock
+        history.cmdline
+        history.search
+        urls</code></pre>
+        <p>Las expresiones pueden ser mas complejas (podriamos indicar que se ignoren todos los archivos PDF, por poner un ejemplo), pero creo que quedan claras las ventajas de usar los .gitignore en nuestros <em>dotfiles</em>.</p>
+        <p>Existen archivos equivalentes en otros sistemas de respaldo como Syncthing. Si no usa Git, investigue como se hace en su programa elegido.</p>
+        <h2 id="configuración-mínima-y-configuración-total">Configuración mínima y configuración total</h2>
+        <p>Esto es importante.</p>
+        <p>La vida te da dos caminos a elegir al cultivar tus <em>dotfiles</em>. Puedes ser alguien que configura todo en absoluto, que no se deja pasar ningún detalle con tal de mejorar su configuración, que no se guarda ninguna incomodidad; o puedes ser un usuario que hace configuraciones minimalistas con solo lo que necesita, pensando en no hacer cosas extrañas ni gastar mucho tiempo en ello por mas que otros lo vean como una inversión.</p>
+        <p>Personalmente prefiero por mucho ser un usuario de configuraciones predeterminadas. Incluso me considero purista. Solo me ha traído grandes beneficios.</p>
+        <p><img src="attachments/default-user.webp" /></p>
+        <h2 id="diseño-y-buen-gusto">Diseño y buen gusto</h2>
+        <p>Hacer <em>dotfiles</em> solo por hacerlos, ocasiona que sean bastante feos. Hay un par de trucos que terminara descubriendo si sigue haciendo <em>dotfiles</em>.</p>
+        <h3 id="mantén-la-estética-consistente">Mantén la estética consistente</h3>
+        <p>Si usas un esquema de color tu editor de código, definitivamente querrás tenerlo también en tu terminal, o por lo menos algo que combine. Puedes extender esta idea personalizando los temas usando los mismos tonos de color y la misma fuente tipográfica en todos los programas. El fondo de pantalla también debe combinar o sentirás una gran incomodidad al mirarlo.</p>
+        <p>Hay esquemas de color que son famosos por ser excelentes en estética y funcionalidad. Si no tienes tiempo para diseñar el tuyo, usa alguno de esos esquemas famosos como <a href="https://www.nordtheme.com/">Nord</a> y <a href="https://github.com/morhetz/gruvbox">Gruvbox</a>.</p>
+        <figure>
+        <img src="attachments/gruvbox.webp" alt="" /><figcaption>Un buen rice 🍙 con Gruvbox</figcaption>
+        </figure>
+        <p>Hay esquemas de color que se ven genial, pero a la hora de usarlos aparecen terribles problemas: cansan la vista, dificultan la lectura, cuesta encontrar elementos en la pantalla, entre otras cosas. Esto sencillamente no es funcional, y hay que cambiarlos de inmediato.</p>
+        <h3 id="el-fondo-de-pantalla-no-debe-ser-lo-mas-importante">El fondo de pantalla no debe ser lo mas importante</h3>
+        <p>Hay quienes remueven todos los elementos gráficos y simplemente colocan un fondo de pantalla llamativo. Simplemente hacerlo apesta.</p>
+        <h3 id="deja-los-temas-oscuros">Deja los temas oscuros</h3>
+        <p>Los temas oscuros (en verdad muy oscuros) son lo mas llamativo al inicio. Se tiene la idea de que solo se puede escoger entre un tema claro con un hiriente blanco intenso y uno oscuro que es mejor para la vista y mas elegante. Casi siempre se olvidan de los colores pasteles que están en un punto medio. Con un esquema de colores pasteles suaves definitivamente no obtendrá una apariencia agresiva como la que sí tendría con algo oscuro con colores contrastantes, pero obtendrá el resto de ventajas y sera incluso mejor para los ojos.</p>
+        <p>Las preferencias personales dan la ultima palabra. Solamente considere otros niveles de contraste antes de elegir.</p>
+        <h2 id="cuando-configurar-no-es-suficiente">Cuando configurar no es suficiente</h2>
+        <h3 id="escribe-scripts">Escribe scripts</h3>
+        <p>Escribir scripts realmente hace la diferencia. Hacerlo implica ser un usuario que de verdad aprovecha una PC. Puede ser para cualquier cosa: tomar una captura de pantalla, sincronizar tus documentos, enviar una notificación cada 30 minutos para recordarte estirar las piernas, cambiar al tema oscuro después de las 8:00 pm, listar los documentos, eliminar archivos temporales…</p>
+        <p>Recomiendo altamente hacerlos en POSIX Shell Scripting, pero cualquier lenguaje de scripting funcionara bien.</p>
+        <h3 id="has-un-fork">Has un <em>fork</em></h3>
+        <p>No siempre es posible realizar la configuración que tanto deseamos. Hacer un foro al programa para aplicarle nuestras modificaciones deseadas es la opción que aparece. Hacer un <em>fork</em> puede ser tedioso, mantenerlo, aun mas. Se tiene que evaluar muy bien si valdrá la pena hacerlo, pero muchas veces no queda otra opción.</p>
+        <p>Si la modificación que quieres hacer es una genialidad, has un <em>pull request</em>. Si el proyecto ya no esta mantenido, no lo dudes, crea el <em>fork</em>, no te perderás de nada, esa cosa ya se está empolvando.</p>
+        <h3 id="crea-tus-propios-programas">Crea tus propios programas</h3>
+        <p>Si ni configurar ni modificar el código es suficiente, es turno escribir un programa desde cero. La ventaja es clara: personalización total. Los costos serán tus habilidades para diseñarlo. Esto solo debería hacerse cuando se detecta una necesidad muy importante para nuestro flujo de trabajo y se esta completamente seguro de que no se ha hecho ya antes.</p>
+        <p>El software hecho a medida es el sentido supremo de la computadora personal. A veces hay que tenerlo en cuenta, sobre todo hoy en día que casi todo es basura.</p>
+      </article>
+    </section>
+
+    
+      </body>
+</html>
