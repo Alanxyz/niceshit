@@ -45,8 +45,15 @@ h2 {
   font-size: 2rem;
   font-style: italic;
   border-top: 4px double var(--main-fg);
-  border-bottom: 1px solid var(--main-fg);
   padding: 30px 10px;
+}
+
+h2::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid var(--main-fg);
+  margin: 1.75rem auto 0 auto;
+  max-width: 5em;
 }
 
 h3 {
