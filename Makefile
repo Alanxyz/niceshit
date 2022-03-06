@@ -6,12 +6,8 @@ DESCRIPTION := Un blog penoso, insignificante y para nada serio.
 MD_NOTES := $(shell ls -b posts/*.md)
 HTML_NOTES := $(shell ls -b posts/*.md \
 							| sed -e 's,posts/,web/,g' -e 's/.md/.html/g')
-PNG_IMAGES := $(shell ls -b web/attachments/*.png)
-GIF_IMAGES := $(shell ls -b web/attachments/*.gif)
-WEBP_IMAGES := $(shell ls -b web/attachments/* \
-							 | sed -e 's,.png,.webp,g' -e 's,.gif,.webp,g')
 
-all: $(HTML_NOTES) $(WEBP_IMAGES)
+all: $(HTML_NOTES)
 
 web/%.html: posts/%.md templates/post.html
 	@echo procesando "$<"
@@ -25,14 +21,6 @@ web/%.html: posts/%.md templates/post.html
 			--css styles/theme.css \
 			--katex=https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/ \
 		"$<" -o "$@"
-
-web/attachments/%.webp: images/%.png
-	@img2webp "$<" -o "$@"
-	@rm "$<"
-
-web/attachments/%.webp: images/%.gif
-	@gif2webp "$<" -o "$@"
-	@rm "$<"
 
 feed:
 	@printf '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0">\n<channel>\n<title>NiceShit!</title>\n<link>https://niceshit.ml/</link>\n<description>Blog sobre ciencia, humanidades y tecnología.</description>\n' > web/feed.xml
