@@ -95,6 +95,7 @@ code {
   padding-left: 6px;
   padding-right: 6px;
   border-radius: 6px;
+  font-size: 0.8em;
 }
 
 pre > code {
