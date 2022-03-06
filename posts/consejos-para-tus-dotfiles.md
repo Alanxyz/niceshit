@@ -8,7 +8,7 @@ Cambiar de sistema operativo típicamente seria una tarea muy molesta, llena de 
 
 ## Respalda tus configuraciones
 
-Los _dotfiles_ son para guardar. Nunca sabes cuando tendras que cambiar de PC o perderas la informacion de tu maquina actual. Cuado los guardes, has respaldos. Puedes usar la nube de tu preferencia, meterlos en un disco duro de por allí, pero lo mas comun es meterlas en un repositorio de Git. Normalmente estos se suben a [Github](https://github.com/) o [Gitlab](https://gitlab.com/).
+Los _dotfiles_ son para guardar. Nunca sabes cuando tendras que cambiar de PC o perderas la informacion de tu maquina actual. Cuado los guardes, haz respaldos. Puedes usar la nube de tu preferencia, meterlos en un disco duro de por allí, pero lo mas comun es meterlas en un repositorio de Git. Normalmente estos se suben a [Github](https://github.com/) o [Gitlab](https://gitlab.com/).
 
 ### Conserva solo lo necesario
 
@@ -121,11 +121,11 @@ Escribir scripts realmente hace la diferencia. Hacerlo implica ser un usuario qu
 
 Recomiendo altamente hacerlos en POSIX Shell Scripting, pero cualquier lenguaje de scripting funcionara bien.
 
-### Has un _fork_
+### Haz un _fork_
 
-No siempre es posible realizar la configuración que tanto deseamos. Hacer un foro al programa para aplicarle nuestras modificaciones deseadas es la opción que aparece. Hacer un _fork_ puede ser tedioso, mantenerlo, aun mas. Se tiene que evaluar muy bien si valdrá la pena hacerlo, pero muchas veces no queda otra opción.
+No siempre es posible realizar la configuración que tanto deseamos. Hacer un _fork_ al programa para aplicarle nuestras modificaciones deseadas es la opción que aparece. Hacer un _fork_ puede ser tedioso, mantenerlo, aun mas. Se tiene que evaluar muy bien si valdrá la pena hacerlo, pero muchas veces no queda otra opción.
 
-Si la modificación que quieres hacer es una genialidad, has un _pull request_. Si el proyecto ya no esta mantenido, no lo dudes, crea el _fork_, no te perderás de nada, esa cosa ya se está empolvando.
+Si la modificación que quieres hacer es una genialidad, haz un _pull request_. Si el proyecto ya no esta mantenido, no lo dudes, crea el _fork_, no te perderás de nada, esa cosa ya se está empolvando.
 
 ### Crea tus propios programas
 
