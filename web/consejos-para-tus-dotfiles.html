@@ -5,7 +5,7 @@
     <meta name="generator" content="pandoc" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
                     <meta name="description" content="Un blog penoso, insignificante y para nada serio." />
-        <title>Consejos para tus _dotfiles_</title>
+        <title>Consejos para tus dotfiles</title>
     <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -38,9 +38,9 @@ ul.task-list{list-style: none;}
 
     <section>
       <article class="note">
-        <h1 id="consejos-para-tus-dotfiles">Consejos para tus <em>dotfiles</em></h1>
+        <h1 id="consejos-para-tus-dotfiles">Consejos para tus dotfiles</h1>
         <p><img src="attachments/dotfiles.webp" /></p>
-        <p>Recientemente tuve la suficiente cantidad de tiempo para darle algo de mantenimiento a mi computadora personal. Entre las cosas que hice, una importante fue mi cambio de sistema operativo de Debian Linux a Devan Linux. Para esta nueva instalación tuve que hacer respaldos de mis archivos y configuraciones.</p>
+        <p>Recientemente tuve la suficiente cantidad de tiempo para darle algo de mantenimiento a mi computadora personal. Entre las cosas que hice, una importante fue mi cambio de sistema operativo de <a href="https://www.debian.org/">Debian Linux</a> a <a href="https://www.devuan.org/">Devan Linux</a>. Para esta nueva instalación tuve que hacer respaldos de mis archivos y configuraciones.</p>
         <p>Cambiar de sistema operativo típicamente seria una tarea muy molesta, llena de contratiempos, pero teniendo los desfiles bien controlados es realmente solo cuestión del tiempo que pedo durar la instalación. Paradójicamente, entre mas fácil para un usuario es hacer una reinstalación, menos frecuentemente suele necesitar hacer una. Esto ultimo, contrario a un usuario nuevo que tiene mucho por probar y poco tiempo para probar.</p>
         <h2 id="respalda-tus-configuraciones">Respalda tus configuraciones</h2>
         <p>Los <em>dotfiles</em> son para guardar. Nunca sabes cuando tendras que cambiar de PC o perderas la informacion de tu maquina actual. Cuado los guardes, has respaldos. Puedes usar la nube de tu preferencia, meterlos en un disco duro de por allí, pero lo mas comun es meterlas en un repositorio de Git. Normalmente estos se suben a <a href="https://github.com/">Github</a> o <a href="https://gitlab.com/">Gitlab</a>.</p>
@@ -74,11 +74,11 @@ ul.task-list{list-style: none;}
             └── .config
                 └── zathura
                     └── zathurarc</code></pre>
-        <p>Para <em>instalar</em> nuestras configuraciones hacemos, por ejemplo, <code>stow vim</code> para instalar solo los archivos de configuracion de Vim, <code>stow urxvt bash</code> para los de Bash y Urxvt, y <code>stow *</code> para instalar todos los archivos de todos los programas.</p>
+        <p>Para instalar nuestras configuraciones hacemos, por ejemplo, <code>stow vim</code> para instalar solo los archivos de configuracion de Vim, <code>stow urxvt bash</code> para los de Bash y Urxvt, y <code>stow *</code> para instalar todos los archivos de todos los programas.</p>
         <p>Una vez instalados tendremos que si editamos <code>~/.vimrc</code> en realidad estaremos editando <code>~/.dotfiles/vim/.vimrc</code>, por lo que los cambios se harán en el repositorio y Git los rastreara. Por el lado contrario, si hacemos <code>git pull</code> en el repositorio, este se actualizara y con él lo harán los archivos pues están enlazados.</p>
         <p>Stow, ademas de solucionar el ubicar los archivos de configuracion, tambien nos propone una estructura de directorios funcional para almacenarlos.</p>
         <h3 id="usa-los-.gitignore">Usa los .gitignore</h3>
-        <p>Hay archivos que no queremos que Git agregue al repositorio. Usando un archivo <code>.gitignore</code> podemos hacer que sean ignorados. Por ejemplo, si usamos un el lector de RSS Newsboat, definitivamente no queremos que se guarde el cache, el hisotorial, ni nuestras URLs privadas de las webs que seguimos. Lamentablemente, Newsboat coloca estos archivos en la misma carpeta que donde va la configuración. Basta con agregar un archvio llamado <code>.gitignore</code> que contenga el siguiente texto.</p>
+        <p>Hay archivos que no queremos que Git agregue al repositorio. Usando un archivo .gitignore podemos hacer que sean ignorados. Por ejemplo, si usamos un el lector de RSS Newsboat, definitivamente no queremos que se guarde el cache, el hisotorial, ni nuestras URLs privadas de las webs que seguimos. Lamentablemente, Newsboat coloca estos archivos en la misma carpeta que donde va la configuración. Basta con agregar un archvio llamado <code>.gitignore</code> que contenga el siguiente texto.</p>
         <pre class="text"><code>cache.db
         cache.db.lock
         history.cmdline
@@ -89,7 +89,7 @@ ul.task-list{list-style: none;}
         <h2 id="configuración-mínima-y-configuración-total">Configuración mínima y configuración total</h2>
         <p>Esto es importante.</p>
         <p>La vida te da dos caminos a elegir al cultivar tus <em>dotfiles</em>. Puedes ser alguien que configura todo en absoluto, que no se deja pasar ningún detalle con tal de mejorar su configuración, que no se guarda ninguna incomodidad; o puedes ser un usuario que hace configuraciones minimalistas con solo lo que necesita, pensando en no hacer cosas extrañas ni gastar mucho tiempo en ello por mas que otros lo vean como una inversión.</p>
-        <p>Personalmente prefiero por mucho ser un usuario de configuraciones predeterminadas. Incluso me considero purista. Solo me ha traído grandes beneficios.</p>
+        <p>Personalmente, prefiero por mucho ser un usuario de configuraciones predeterminadas.</p>
         <p><img src="attachments/default-user.webp" /></p>
         <h2 id="diseño-y-buen-gusto">Diseño y buen gusto</h2>
         <p>Hacer <em>dotfiles</em> solo por hacerlos, ocasiona que sean bastante feos. Hay un par de trucos que terminara descubriendo si sigue haciendo <em>dotfiles</em>.</p>

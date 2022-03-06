@@ -1,8 +1,8 @@
-# Consejos para tus _dotfiles_
+# Consejos para tus dotfiles
 
 ![](attachments/dotfiles.webp)
 
-Recientemente tuve la suficiente cantidad de tiempo para darle algo de mantenimiento a mi computadora personal. Entre las cosas que hice, una importante fue mi cambio de sistema operativo de Debian Linux a Devan Linux.  Para esta nueva instalación tuve que hacer respaldos de mis archivos y configuraciones. 
+Recientemente tuve la suficiente cantidad de tiempo para darle algo de mantenimiento a mi computadora personal. Entre las cosas que hice, una importante fue mi cambio de sistema operativo de [Debian Linux](https://www.debian.org/) a [Devan Linux](https://www.devuan.org/).  Para esta nueva instalación tuve que hacer respaldos de mis archivos y configuraciones. 
 
 Cambiar de sistema operativo típicamente seria una tarea muy molesta, llena de contratiempos, pero teniendo los desfiles bien controlados es realmente solo cuestión del tiempo que pedo durar la instalación. Paradójicamente, entre mas fácil para un usuario es hacer una reinstalación, menos frecuentemente suele necesitar hacer una. Esto ultimo, contrario a un usuario nuevo que tiene mucho por probar y poco tiempo para probar.
 
@@ -57,7 +57,7 @@ Al usar stow necesitamos de una carpeta que este dentro de `$HOME` que contenga 
             └── zathurarc
 ```
 
-Para _instalar_ nuestras configuraciones hacemos, por ejemplo, `stow vim` para instalar solo los archivos de configuracion de Vim, `stow urxvt bash` para los de Bash y Urxvt, y `stow *` para instalar todos los archivos de todos los programas. 
+Para instalar nuestras configuraciones hacemos, por ejemplo, `stow vim` para instalar solo los archivos de configuracion de Vim, `stow urxvt bash` para los de Bash y Urxvt, y `stow *` para instalar todos los archivos de todos los programas. 
 
 Una vez instalados tendremos que si editamos `~/.vimrc` en realidad estaremos editando `~/.dotfiles/vim/.vimrc`, por lo que los cambios se harán en el repositorio y Git los rastreara. Por el lado contrario, si hacemos `git pull` en el repositorio, este se actualizara y con él lo harán los archivos pues están enlazados.
 
@@ -65,7 +65,7 @@ Stow, ademas de solucionar el ubicar los archivos de configuracion, tambien nos 
 
 ### Usa los .gitignore
 
-Hay archivos que no queremos que Git agregue al repositorio. Usando un archivo `.gitignore` podemos hacer que sean ignorados. Por ejemplo, si usamos un el lector de RSS Newsboat, definitivamente no queremos que se guarde el cache, el hisotorial, ni nuestras URLs privadas de las webs que seguimos. Lamentablemente, Newsboat coloca estos archivos en la misma carpeta que donde va la configuración. Basta con agregar un archvio llamado `.gitignore` que contenga el siguiente texto.
+Hay archivos que no queremos que Git agregue al repositorio. Usando un archivo .gitignore podemos hacer que sean ignorados. Por ejemplo, si usamos un el lector de RSS Newsboat, definitivamente no queremos que se guarde el cache, el hisotorial, ni nuestras URLs privadas de las webs que seguimos. Lamentablemente, Newsboat coloca estos archivos en la misma carpeta que donde va la configuración. Basta con agregar un archvio llamado `.gitignore` que contenga el siguiente texto.
 
 ```text
 cache.db
@@ -85,7 +85,7 @@ Esto es importante.
 
 La vida te da dos caminos a elegir al cultivar tus _dotfiles_. Puedes ser alguien que configura todo en absoluto, que no se deja pasar ningún detalle con tal de mejorar su configuración, que no se guarda ninguna incomodidad; o puedes ser un usuario que hace configuraciones minimalistas con solo lo que necesita, pensando en no hacer cosas extrañas ni gastar mucho tiempo en ello por mas que otros lo vean como una inversión.
 
-Personalmente prefiero por mucho ser un usuario de configuraciones predeterminadas. Incluso me considero purista. Solo me ha traído grandes beneficios.
+Personalmente, prefiero por mucho ser un usuario de configuraciones predeterminadas. 
 
 ![](attachments/default-user.webp)
 
