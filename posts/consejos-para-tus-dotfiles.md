@@ -16,7 +16,7 @@ No hay necesidad de incluir en tus _dotfiles_ todas las configuraciones que teng
 
 ### Comparte tus _dotfiles_
 
-Cuando ya tienes tus _dotfiles_ guardados, sin informacion sensible, sin archivos innutiies, no pierdes nada con compartirlos. Pueden ayudar a alguien mas. Con colocarlos en Github y ponerle la etiqueta `dotfiles` al repositorio, ya estan en un buen lugar accesible para los demás. Hay otras buenas webs dedicadas a compartir las configuraciones. Algunas de ellas son: [Unixporn](reddit.com/r/unixporn) y [Dotshare](http://dotshare.it/).
+Cuando ya tienes tus _dotfiles_ guardados, sin informacion sensible, sin archivos innutiies, no pierdes nada con compartirlos. Pueden ayudar a alguien mas. Con colocarlos en Github y ponerle la etiqueta `dotfiles` al repositorio, ya estan en un buen lugar accesible para los demás. Hay otras buenas webs dedicadas a compartir las configuraciones. Algunas de ellas son: [Unixporn](https://reddit.com/r/unixporn) y [Dotshare](http://dotshare.it/).
 
 Recuerda revisar las configuraciones de otros usuarios ocasionalmente. Pudes sacar inspiración e ideas para mejorar tus propios _dotfiles_. Solo no le dediques demasiado tiempo a esto. Puede ser hipnótico inspeccionar las configuraciones de otros usuarios, en especial si se dedican a algo similar a lo que te dedicas tú.
 
