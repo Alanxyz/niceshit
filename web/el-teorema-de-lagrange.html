@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+                    <meta name="description" content="Un blog penoso, insignificante y para nada serio." />
+        <title>El teorema de Lagrange</title>
+    <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+    </style>
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/ui.css" />
+        <link rel="stylesheet" href="styles/theme.css" />
+            <script src="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.js"></script>
+            <script>document.addEventListener("DOMContentLoaded", function () {
+             var mathElements = document.getElementsByClassName("math");
+             for (var i = 0; i < mathElements.length; i++) {
+              var texText = mathElements[i].firstChild;
+              if (mathElements[i].tagName == "SPAN") {
+               katex.render(texText.data, mathElements[i], {
+                displayMode: mathElements[i].classList.contains('display'),
+                throwOnError: false,
+                fleqn: false
+               });
+            }}});
+            </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.2/dist/katex.min.css" />
+        <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+      </head>
+
+  <body>
+    
+    <header>
+      <div>
+        <h1><img src="attachments/soycry.webp" alt />NiceShit!</h1>
+      </div>
+    </header>
+
+    <nav>
+      <a href="index.html">🏠 Inicio</a>
+      <a href="donaciones.html">💵 Donaciones</a>
+      <a href="feed.xml">🟧 RSS</a>
+    </nav>
+
+    <section>
+      <article class="note">
+        <h1 id="el-teorema-de-lagrange">El teorema de Lagrange</h1>
+        <p><img src="attachments/make-a-group.webp" /></p>
+        <h2 id="preliminares">Preliminares</h2>
+        <h3 id="divisibilidad">Divisibilidad</h3>
+        <p>En la educacion primaria se enseña que un numero entero a otro de manera exacta, si al dividirlos obtenemos un tercer numero sin decimales, entero.</p>
+        <p><span class="math display"> \frac{a}{b} = c </span></p>
+        <p>Usaremos esto, precisamente para definir lo que es un divisor sin necesidad de recurrir por ahora a la operacion de dividir. Es muy claro que <span class="math inline">a/b = c \implies a = bc</span>. Sin preocuparnos por el valor de <span class="math inline">c</span>, su existencia basta para que esa igualdad sea posible.</p>
+        <div class="box">
+        <p><strong>Definicion</strong> (divisor). Sean <span class="math inline">a, b \in \mathbb{Z}</span>, si existe un tercer <span class="math inline">c \in \mathbb{Z}</span> tal que</p>
+        <p><span class="math display"> a = bc </span></p>
+        <p>decimos que <span class="math inline">b</span> es dividor de <span class="math inline">a</span>, o que <span class="math inline">a</span> es multiplo de <span class="math inline">b</span>.</p>
+        </div>
+        <p>Notese que ahora tenemos la divisibilidad definida en terminos del producto sin recurrir a la operacion de division.</p>
+        <h3 id="cosas-de-conjuntos">Cosas de conjuntos</h3>
+        <div class="box">
+        <p><strong>Teorema</strong> (de Lagrange). Si <span class="math inline">G</span> es un grupo finito y <span class="math inline">H</span> un subgrupo de <span class="math inline">G</span>, entonces <span class="math inline">|H|</span> es un divisor de <span class="math inline">|G|</span>.</p>
+        </div>
+        <p><em>Demostracion</em>. Consideraremos dos casos: que <span class="math inline">H = G</span> y que <span class="math inline">H \neq G</span>. En el primer caso es obvio que <span class="math inline">|H|</span> divide a <span class="math inline">|G|</span>, son iguales y su division resulta en <span class="math inline">1</span>. Para el segundo caso consideremos la lista de elementos de <span class="math inline">H</span></p>
+        <p><span class="math display"> h_1, h_2, \dots, h_n </span></p>
+        <p>donde <span class="math inline">n = |H|</span>. Como <span class="math inline">H \neq G</span>, entonces existe al menos un <span class="math inline">a \in G</span>, tal que <span class="math inline">a \notin H</span>. Usando el producto de los grupos por la izquierda obtenemos una nueva lista.</p>
+        <p><span class="math display"> h_1a, h_2a, \dots, h_na </span></p>
+      </article>
+    </section>
+
+    
+      </body>
+</html>

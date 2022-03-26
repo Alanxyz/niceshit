@@ -75,6 +75,8 @@ No tengo altas exigencias en eficiencia al hacer un análisis de datos. Uso la s
 
 Estoy usando el navegador [Brave](https://brave.com/). Es incomodo estar basado en Chromium pero tiene cosas agradables, como el bloqueo de publicidad por defecto. También uso [surf](https://surf.suckless.org/), un navegador ligero basado en WebKit GTK. Usaría únicamente surf, pero algunas webs no funcionan correctamente.
 
+Estoy experimentando pasarme a [LibreWolf](https://librewolf.net/). Por ahora aún estoy haciendo pruebas.
+
 ### Email
 
 No he tenido el valor para montarme mi propio servidor de correo electrónico. Por ahora estoy usando [ProtonMail](https://protonmail.com/), no por su premisa de la privacidad, sino por ser el servicio menos malo que encontré. 
@@ -97,7 +99,7 @@ Guardo mis contraseñas cifradas con GPG usando el estándar [pass](https://www.
 
 ### Multimedia
 
-Para la visualización, uso [mvp](https://mpv.io/) para audio y video, y [feh](https://feh.finalrewind.org/) para las imágenes. Funcionan perfecto y no tienen funciones de mas ni dependencias ridículas.
+Para la visualización, uso [mvp](https://mpv.io/) para audio y video; [sxiv](https://github.com/muennich/sxiv), para las imágenes. Funcionan perfecto y no tienen funciones de mas ni dependencias ridículas.
 
 ### Finanzas
 
